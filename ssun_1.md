@@ -20,8 +20,8 @@ org.apache.hadoop.io.compress.SnappyCodec
 ```
 
 
-19/03/10 22:37:39 INFO mapreduce.Job: Job job_1552272159047_0005 running in uber mode : false
-19/03/10 22:37:39 INFO mapreduce.Job:  map 0% reduce 0%
+19/03/10 22:37:39 INFO mapreduce.Job: Job job_1552272159047_0005 running in uber mode : false\
+19/03/10 22:37:39 INFO mapreduce.Job:  map 0% reduce 0%\
 19/03/10 22:38:06 INFO mapreduce.Job:  map 25% reduce 0%
 19/03/10 22:38:30 INFO mapreduce.Job:  map 50% reduce 0%
 19/03/10 22:38:54 INFO mapreduce.Job:  map 75% reduce 0%
