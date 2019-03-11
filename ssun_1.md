@@ -1,5 +1,3 @@
-신혜선 /Data Tehc unit.\
-
 1. From the accounts table, import only the primary key, along with the first name, last name to
 HDFS directory /loudacre/accounts/user_info. Please save the file in text format with tab
 delimiters.
@@ -9,7 +7,18 @@ sqoop import --connect jdbc:mysql://localhost/loudacre --username training --pas
 --table accounts  --target-dir /loudacre/accounts/user_info \
 --columns "acct_num, first_name, last_name" --fields-terminated-by "\t"
 ```
-
+```
+1	Donald	Becton
+2	Donna	Jones
+3	Dorthy	Chalmers
+4	Leila	Spencer
+5	Anita	Laughlin
+6	Stevie	Bridge
+7	David	Eggers
+8	Dorothy	Koopman
+9	Kara	Kohl
+10	Diane	Nelson
+```
 2. This time save the same in parquet format with snappy compression. Save it in
 /loudacre/accounts/user_compressed. Provide.a screenshot of HUE with the new directory
 created.
@@ -20,8 +29,15 @@ sqoop import --connect jdbc:mysql://localhost/loudacre --username training --pas
 --compression-codec \
 org.apache.hadoop.io.compress.SnappyCodec
 ```
-
-
+```
+0000000: 	00 03 55 32 00 02 71 3e b2 aa 0d 40 31 09 44 6f	  ..U2..q>...@1.Do
+0000010: 	6e 61 6c 64 09 42 65 63 74 6f 6e 0a 32 01 10 f0	  nald.Becton.2...
+0000020: 	56 6e 61 09 4a 6f 6e 65 73 0a 33 09 44 6f 72 74	  Vna.Jones.3.Dort
+0000030: 	68 79 09 43 68 61 6c 6d 65 72 73 0a 34 09 4c 65	  hy.Chalmers.4.Le
+0000040: 	69 6c 61 09 53 70 65 6e 63 65 72 0a 35 09 41 6e	  ila.Spencer.5.An
+0000050: 	69 74 61 09 4c 61 75 67 68 6c 69 6e 0a 36 09 53	  ita.Laughlin.6.S
+0000060: 	74 65 76 69 65 09 42 72 69 64 67 65 0a 37 09 44	  tevie.Bridge.7.D
+```
 19/03/10 22:37:39 INFO mapreduce.Job: Job job_1552272159047_0005 running in uber mode : false     \
 19/03/10 22:37:39 INFO mapreduce.Job:  map 0% reduce 0%                                           \
 19/03/10 22:38:06 INFO mapreduce.Job:  map 25% reduce 0%                                          \
@@ -79,6 +95,18 @@ sqoop import --connect jdbc:mysql://localhost/loudacre --username training --pas
 --table accounts  --target-dir /loudacre/accounts/CA_1 \
 --columns "acct_num, first_name, last_name, state" --fields-terminated-by "\t" \
 --where "state = 'CA' " 
+```
+```
+1	Donald	Becton	CA
+2	Donna	Jones	CA
+3	Dorthy	Chalmers	CA
+4	Leila	Spencer	CA
+5	Anita	Laughlin	CA
+6	Stevie	Bridge	CA
+7	David	Eggers	CA
+8	Dorothy	Koopman	CA
+9	Kara	Kohl	CA
+10	Diane	Nelson	CA
 ```
                                                                                                    \
 19/03/10 22:41:17 INFO mapreduce.Job: Running job: job_1552272159047_0006                          \
@@ -189,8 +217,6 @@ sqoop import --connect jdbc:mysql://localhost/loudacre --username training --pas
 --where "state = 'CA' " \
 --compression-codec org.apache.hadoop.io.compress.GzipCodec
 ```
-
-
 19/03/10 23:13:54 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.7.0\
 19/03/10 23:13:54 WARN tool.BaseSqoopTool: Setting your password on the command-line is insecure. Consider using\                                  d.
 19/03/10 23:13:55 INFO manager.MySQLManager: Preparing to use a MySQL streaming resultset.                      \
