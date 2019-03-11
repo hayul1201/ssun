@@ -134,50 +134,51 @@ sqoop import --connect jdbc:mysql://localhost/loudacre --username training --pas
 --where "state = 'CA' "   --z
 ```
 
-19/03/10 23:10:24 INFO mapreduce.Job: Running job: job_1552272159047_0007
-19/03/10 23:11:10 INFO mapreduce.Job: Job job_1552272159047_0007 running in uber mode : false
-19/03/10 23:11:11 INFO mapreduce.Job:  map 0% reduce 0%
-19/03/10 23:11:45 INFO mapreduce.Job:  map 25% reduce 0%
-19/03/10 23:12:04 INFO mapreduce.Job:  map 50% reduce 0%
-19/03/10 23:12:27 INFO mapreduce.Job:  map 75% reduce 0%
-19/03/10 23:12:43 INFO mapreduce.Job:  map 100% reduce 0%
-19/03/10 23:12:44 INFO mapreduce.Job: Job job_1552272159047_0007 completed successfully
-19/03/10 23:12:45 INFO mapreduce.Job: Counters: 30
-        File System Counters
-                FILE: Number of bytes read=0
-                FILE: Number of bytes written=561628
-                FILE: Number of read operations=0
-                FILE: Number of large read operations=0
-                FILE: Number of write operations=0
-                HDFS: Number of bytes read=470
-                HDFS: Number of bytes written=801692
-                HDFS: Number of read operations=16
-                HDFS: Number of large read operations=0
-                HDFS: Number of write operations=8
-        Job Counters
-                Launched map tasks=4
-                Other local map tasks=4
-                Total time spent by all maps in occupied slots (ms)=0
-                Total time spent by all reduces in occupied slots (ms)=0
-                Total time spent by all map tasks (ms)=83657
-                Total vcore-seconds taken by all map tasks=83657
-                Total megabyte-seconds taken by all map tasks=21416192
-        Map-Reduce Framework
-                Map input records=92416
-                Map output records=92416
-                Input split bytes=470
-                Spilled Records=0
-                Failed Shuffles=0
-                Merged Map outputs=0
-                GC time elapsed (ms)=491
-                CPU time spent (ms)=17800
-                Physical memory (bytes) snapshot=507895808
-                Virtual memory (bytes) snapshot=8271130624
-                Total committed heap usage (bytes)=251920384
-        File Input Format Counters
-                Bytes Read=0
-        File Output Format Counters
-                Bytes Written=801692
+19/03/10 23:10:24 INFO mapreduce.Job: Running job: job_1552272159047_0007                                 \
+19/03/10 23:11:10 INFO mapreduce.Job: Job job_1552272159047_0007 running in uber mode : false             \
+19/03/10 23:11:11 INFO mapreduce.Job:  map 0% reduce 0%                                                   \
+19/03/10 23:11:45 INFO mapreduce.Job:  map 25% reduce 0%                                                  \
+19/03/10 23:12:04 INFO mapreduce.Job:  map 50% reduce 0%                                                  \
+19/03/10 23:12:27 INFO mapreduce.Job:  map 75% reduce 0%                                                  \
+19/03/10 23:12:43 INFO mapreduce.Job:  map 100% reduce 0%                                                 \
+19/03/10 23:12:44 INFO mapreduce.Job: Job job_1552272159047_0007 completed successfully                   \
+19/03/10 23:12:45 INFO mapreduce.Job: Counters: 30                                                        \
+        File System Counters                                                                              \
+                FILE: Number of bytes read=0                                                              \
+                FILE: Number of bytes written=561628                                                      \
+                FILE: Number of read operations=0                                                         \
+                FILE: Number of large read operations=0                                                   \
+                FILE: Number of write operations=0                                                        \
+                HDFS: Number of bytes read=470                                                            \
+                HDFS: Number of bytes written=801692                                                      \
+                HDFS: Number of read operations=16                                                        \
+                HDFS: Number of large read operations=0                                                   \
+                HDFS: Number of write operations=8                                                        \
+        Job Counters                                                                                      \
+                Launched map tasks=4                                                                      \
+                Other local map tasks=4                                                                   \
+                Total time spent by all maps in occupied slots (ms)=0                                     \
+                Total time spent by all reduces in occupied slots (ms)=0                                  \
+                Total time spent by all map tasks (ms)=83657                                              \
+                Total vcore-seconds taken by all map tasks=83657                                          \
+                Total megabyte-seconds taken by all map tasks=21416192                                    \
+        Map-Reduce Framework                                                                              \
+                Map input records=92416                                                                   \
+                Map output records=92416                                                                  \
+                Input split bytes=470                                                                     \
+                Spilled Records=0                                                                         \
+                Failed Shuffles=0                                                                         \
+                Merged Map outputs=0                                                                      \
+                GC time elapsed (ms)=491                                                                  \
+                CPU time spent (ms)=17800                                                                 \
+                Physical memory (bytes) snapshot=507895808                                                \
+                Virtual memory (bytes) snapshot=8271130624                                                \
+                Total committed heap usage (bytes)=251920384                                              \
+        File Input Format Counters                                                                        \
+                Bytes Read=0                                                                              \
+        File Output Format Counters                                                                       \
+                Bytes Written=801692                                                                      \
+                                                                                                          \
 
 
 ```
